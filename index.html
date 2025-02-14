@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="HaroldsList.com">
+    <meta name="author" content="HaroldsList.com">
+    <link rel="icon" href="https://www.haroldslist.com/favicon.ico">
+    <title>HaroldsList.com | The Complete Apartment Search Guide</title>
+    <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/css/bootstrap.min.css" integrity="sha512-siwe/oXMhSjGCwLn+scraPOWrJxHlUgMBMZXdPe2Tnk3I0x3ESCoLz7WZ5NTH6SZrywMY+PB1cjyqJ5jAluCOg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style="height: 100vh;">
+        <!-- FIXED HEADER -->
+        <div class="fixed-header"></div>
+        <div class="redirect-wrapper">
+            <div class="captcha-container">
+                <p class="captcha-text">
+                    <span class="site-name">www.haroldslist.com</span>
+                    <span class="below-captcha">Verify you are human. This may take a few seconds.</span>
+                </p>
+                <!-- <div id="captcha" style="margin: 40px 0;"></div> -->
+                <div class="captcha-box">
+                    <!-- The following line controls and configures the Turnstile widget. -->
+                    <div class="cf-turnstile" data-sitekey="0x4AAAAAAA8qtC0cPKw_Gl21" data-theme="light" data-callback="onSuccess"></div>
+                    <!-- end. -->
+                </div>
+                <p class="captcha-text">
+                    <span class="below-captcha">www.haroldslist.com needs to review the security of your connection before proceeding.</span>
+                </p>
+            </div>
+        </div>
+        <div class="captcha-footer">Performance & Security by Google reCAPTCHA</div>
+    </div>
+
+    <script>
+        function onSuccess(token) {
+            window.location.href = "/redirect.html";
+        }
+      </script>
+</body>
+</html>
